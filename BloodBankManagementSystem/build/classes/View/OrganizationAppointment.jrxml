@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1a0767f4-7348-4341-9a79-dc6760b9d1cb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from donororganization;]]>
+	</queryString>
+	<field name="Reg_No" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Organization_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MOH" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contact_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="204" y="44" width="384" height="35" uuid="e7dde52b-fd55-4f66-b199-def9f1e369d0"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Organization Appointment Full Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="2" width="100" height="20" uuid="904370f1-6984-403e-87e9-27868545aab3"/>
+				<text><![CDATA[Reg_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="2" width="117" height="20" uuid="b5f1f346-5d33-48d7-a76b-352079ec3672"/>
+				<text><![CDATA[Organization_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="2" width="100" height="20" uuid="7a01884f-05a4-458f-8ac8-9fd970160990"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="2" width="100" height="20" uuid="f9ccd6f3-85b4-4c70-b837-ba5b1170ba70"/>
+				<text><![CDATA[MOH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="635" y="2" width="100" height="20" uuid="0c170167-0a95-4bde-b7be-d1572efacad4"/>
+				<text><![CDATA[Contact_No]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="0" width="100" height="20" uuid="9081a8f1-3f10-4e61-981c-299c345fdcd3"/>
+				<textFieldExpression><![CDATA[$F{Reg_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="117" height="20" uuid="9365b0e3-da5a-4006-8dc4-717464d525f5"/>
+				<textFieldExpression><![CDATA[$F{Organization_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="100" height="20" uuid="1c0c6260-f376-46b7-87ef-b197d332f5ba"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="0" width="100" height="20" uuid="8e3378d6-fae6-46e3-aece-f70413fced3d"/>
+				<textFieldExpression><![CDATA[$F{MOH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="635" y="0" width="100" height="20" uuid="da843b03-eff8-4c37-867d-7decccd928d4"/>
+				<textFieldExpression><![CDATA[$F{Contact_No}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="21" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="204" y="0" width="384" height="20" uuid="5d33e57b-c4d3-41bb-8479-3186ed107590"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Blood Bank @ National Blood Transfusion Service]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

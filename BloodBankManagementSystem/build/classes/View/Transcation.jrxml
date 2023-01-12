@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="14c71c72-9bc8-4911-8b99-ea3cc02ced05">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Transcation;]]>
+	</queryString>
+	<field name="Patient_NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Patient_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Patient_Contact_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Time" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Blood_Group" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Weight_Of_Blood" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="No_Of_Bags" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Hospital_Linked" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Incharge_Officer_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="54" width="242" height="25" uuid="930a6dc1-cc44-488c-bf44-154160158cd6"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Transcation Full Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="81" height="20" uuid="b87e63a6-893a-4673-a4d0-4dbe825a7c24"/>
+				<text><![CDATA[Patient_NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="2" width="88" height="20" uuid="93dd185e-0240-4318-bc57-089643fb5b25"/>
+				<text><![CDATA[Patient_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="203" y="2" width="115" height="20" uuid="ec2507cd-f91c-4e33-9c91-8a19564f8267"/>
+				<text><![CDATA[Patient_Contact_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="2" width="63" height="20" uuid="7e63a2c7-1c4e-4e68-8a49-c05f0129bf8e"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="422" y="2" width="63" height="20" uuid="9369be37-797e-4044-a3cc-1bd9bcd536d4"/>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="2" width="85" height="20" uuid="c3b3b047-53ce-4e57-9ae2-07fd9df20efe"/>
+				<text><![CDATA[Blood_Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="588" y="2" width="85" height="20" uuid="8c615840-4fed-412a-8399-43340606fbf9"/>
+				<text><![CDATA[Weight_Of_Blood]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="2" width="100" height="20" uuid="ba198295-c30f-4ba7-bf40-4a9f0b653289"/>
+				<text><![CDATA[Hospital_Linked]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="81" height="20" uuid="537fdb6e-5443-4835-a3a7-b3048d109079"/>
+				<textFieldExpression><![CDATA[$F{Patient_NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="88" height="20" uuid="214e2fb1-fc5e-4d02-8919-0cdf54f78c62"/>
+				<textFieldExpression><![CDATA[$F{Patient_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="203" y="0" width="115" height="20" uuid="04b8aa02-da93-4633-a997-71bd69ac50c7"/>
+				<textFieldExpression><![CDATA[$F{Patient_Contact_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="0" width="63" height="20" uuid="ee00b4a7-ac60-4d44-ad97-dfbf9d4a1d6d"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="0" width="63" height="20" uuid="79223d21-7d05-40e4-be41-13e7f6032873"/>
+				<textFieldExpression><![CDATA[$F{Time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="502" y="0" width="85" height="20" uuid="06afde5e-13f7-4a3d-afc2-33c361af07ed"/>
+				<textFieldExpression><![CDATA[$F{Blood_Group}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="588" y="0" width="100" height="20" uuid="7ff7254a-c075-427b-a969-62a91c023754"/>
+				<textFieldExpression><![CDATA[$F{Weight_Of_Blood}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="d42bab0c-49c9-45bc-8c1d-228598892f9c"/>
+				<textFieldExpression><![CDATA[$F{Hospital_Linked}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="29" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="188" y="0" width="352" height="20" uuid="127a124b-d13b-4bb4-989b-9e8ac8a0eff8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Blood Bank @National Blood Transfusion Service]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="268dfa17-3ba1-48b1-8e28-f94f92331d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from donorappointment;]]>
+	</queryString>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contact_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Time_Slot" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nearest_Center" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Blood_Group" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="186" y="38" width="319" height="31" uuid="6803cff3-30d4-420f-aa0d-27f35351f776"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Donor Appointment Full Details Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="2" width="69" height="20" uuid="d0b80ed2-f570-40c4-b5ad-42ed220bee80"/>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="2" width="76" height="20" uuid="d75ccdf7-de2a-4c98-ae4d-8fd6adb3d7c2"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="0" width="74" height="20" uuid="c76f6d04-497f-4bb5-920d-21566a6b1b42"/>
+				<text><![CDATA[Contact_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="2" width="81" height="20" uuid="80e41dc1-a214-4fc9-bba1-b4754a2f864c"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="2" width="74" height="20" uuid="d2f6c610-8a7e-4a5d-8fad-c56dbc862413"/>
+				<text><![CDATA[Time_Slot]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="519" y="2" width="71" height="20" uuid="7b9ffb84-c47a-4523-8f4f-39b5cc0137ee"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="605" y="2" width="100" height="20" uuid="621e61d5-ebaa-420b-bd1c-a59141ae2c30"/>
+				<text><![CDATA[Nearest_Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="721" y="2" width="80" height="20" uuid="d390328c-a59c-4cf3-b7d7-b30ea2d88dc4"/>
+				<text><![CDATA[Blood_Group]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="0" width="69" height="20" uuid="ea695eec-9f41-4e51-9fb6-77ae3a8d1da9"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="76" height="20" uuid="3b82573d-be19-453a-9f7a-ae8d477e022a"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="0" width="74" height="20" uuid="61346fc3-55ff-4b11-a279-b72e78bf3f5a"/>
+				<textFieldExpression><![CDATA[$F{Contact_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="0" width="81" height="20" uuid="ce642971-96e6-4854-9bdb-c67c042189f0"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="74" height="20" uuid="c385e3c1-4f12-42f6-84b1-d7e4b613ab56"/>
+				<textFieldExpression><![CDATA[$F{Time_Slot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="519" y="0" width="71" height="20" uuid="809b5159-7dff-4e2c-a43f-a88bdcb00754"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="605" y="0" width="100" height="20" uuid="1d6e6985-4cbe-4cad-a9bf-aa169cf5184a"/>
+				<textFieldExpression><![CDATA[$F{Nearest_Center}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="721" y="0" width="81" height="20" uuid="7939d782-a10a-4ae1-9874-6d9a4ba90295"/>
+				<textFieldExpression><![CDATA[$F{Blood_Group}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="186" y="0" width="358" height="20" uuid="a2e53f21-6392-41fe-a69b-4a56f0c75a0e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Blood Bank @National Blood Transfusion Service]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

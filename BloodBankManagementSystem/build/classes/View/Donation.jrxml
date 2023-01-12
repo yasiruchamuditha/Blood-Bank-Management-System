@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fdf62053-72d9-4df8-86e9-3439aad206f9">
+	<queryString language="SQL">
+		<![CDATA[select * from Donation;]]>
+	</queryString>
+	<field name="Donor_NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Donor_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Time" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Blood_Group" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Body_Weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Blood_Gloucose_Level" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Blood_Pressure" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Body_Temperature" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Donated_Place" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="No_Of_Bags" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Weight_of_Blood" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Incharge_Officer_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="299" y="49" width="218" height="30" uuid="85f8f76c-fdd1-41a3-a141-49f15643b4d4"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Donation Full Details ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="3" y="2" width="71" height="20" uuid="9f783e9f-fd9c-48b3-94f6-56b1f4b710aa"/>
+				<text><![CDATA[Donor_NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="2" width="79" height="20" uuid="73c7ce18-1af5-431d-80db-0391cbe2681d"/>
+				<text><![CDATA[Donor_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="2" width="43" height="20" uuid="87caf655-f9a6-4e51-b641-115a1e1a8fd7"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="2" width="45" height="20" uuid="5a358e62-ed11-4c00-8185-3b2de8fc2c40"/>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="0" width="80" height="20" uuid="2874b4c0-5d40-4b7b-81d2-a98e9e6d875d"/>
+				<text><![CDATA[Blood_Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="2" width="85" height="20" uuid="65e16f1d-21ae-48f7-807f-2a9af974264a"/>
+				<text><![CDATA[Body_Weight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="2" width="111" height="20" uuid="6c7596f0-4362-4009-a35d-2591a398c107"/>
+				<text><![CDATA[Blood_Gloucose_Level]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="517" y="2" width="97" height="20" uuid="111aeec8-3468-4011-af3a-ac2757de71b5"/>
+				<text><![CDATA[Blood_Pressure]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="614" y="2" width="77" height="20" uuid="3411eb5d-266b-47ba-a874-0eadeb04cb64"/>
+				<text><![CDATA[No_Of_Bags]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="691" y="2" width="98" height="20" uuid="57dfee18-ee29-4096-a93f-ca740f4b1da5"/>
+				<text><![CDATA[Weight_of_Blood]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="8" width="71" height="20" uuid="21ec7962-ea1c-4e6c-b97d-b7c0a07722b9"/>
+				<textFieldExpression><![CDATA[$F{Donor_NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="8" width="79" height="20" uuid="9694a004-068c-49dd-89e6-02621836c172"/>
+				<textFieldExpression><![CDATA[$F{Donor_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="153" y="8" width="43" height="20" uuid="bdf8731f-fc23-402b-b754-a08acacad2c9"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="8" width="45" height="20" uuid="b54b7987-fa3d-4213-a418-0d5960fcba00"/>
+				<textFieldExpression><![CDATA[$F{Time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="8" width="80" height="20" uuid="2881f88b-5c6c-4dce-b52b-b0cc0fc7c5ae"/>
+				<textFieldExpression><![CDATA[$F{Blood_Group}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="8" width="85" height="20" uuid="0093bb7f-3b05-4301-b630-53e7d8cb35ef"/>
+				<textFieldExpression><![CDATA[$F{Body_Weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="8" width="111" height="20" uuid="4d0985ab-d7a5-4bff-8224-2d7f0a781d20"/>
+				<textFieldExpression><![CDATA[$F{Blood_Gloucose_Level}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="517" y="8" width="97" height="20" uuid="3c8159c8-5414-4a58-9a5f-96955fa3ab67"/>
+				<textFieldExpression><![CDATA[$F{Blood_Pressure}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="614" y="8" width="77" height="20" uuid="c3172d05-d99e-410d-bc59-eaee623dce50"/>
+				<textFieldExpression><![CDATA[$F{No_Of_Bags}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="691" y="8" width="98" height="20" uuid="a1e5650f-889a-4db5-ae4c-cf88b7b53715"/>
+				<textFieldExpression><![CDATA[$F{Weight_of_Blood}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="221" y="0" width="360" height="20" uuid="33c991bf-3639-4c5a-9cd4-1eaf71f831fb"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Blood Bank @National Blood Transfusion Service]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

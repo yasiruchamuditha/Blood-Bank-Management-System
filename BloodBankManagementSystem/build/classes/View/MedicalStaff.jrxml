@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81b25ef8-b359-4708-8e73-8cc5d8247046">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from MedicalStaff;]]>
+	</queryString>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contact_No" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Blood_Group" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Linked_Branch" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Department" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="211" y="33" width="212" height="26" uuid="346d5985-7019-4d13-ba7f-07ed987f51d0"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medical Staff Full Details ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="9590d568-bc44-4cf4-a824-25bb9f194052"/>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="0" width="63" height="20" uuid="7758dd86-af52-42b7-9add-e9a26b50e025"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="0" width="87" height="20" uuid="70cb376b-f234-4941-9686-c9dcaea9de59"/>
+				<text><![CDATA[Contact_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="0" width="76" height="20" uuid="0aabe5c6-8e48-4509-9c89-a4a61e9d6c50"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="0" width="67" height="20" uuid="dbe3a5f2-c59c-49e2-9f2b-dcc06c0a6a00"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="446" y="2" width="79" height="20" uuid="94aaa2cc-bfcf-4f70-a82e-cf870a9967aa"/>
+				<text><![CDATA[Blood_Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="539" y="0" width="89" height="20" uuid="75007ef6-cabc-4825-9a08-949db69a5c45"/>
+				<text><![CDATA[Linked_Branch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="641" y="2" width="80" height="20" uuid="aab3f3c8-cff3-4d07-8de4-a05d29c3bca6"/>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="732" y="2" width="70" height="20" uuid="ea037d42-e74e-4c09-b3cb-aa1c9f91ac6d"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="1562fce1-3a6a-49a2-bb4c-f7847ff833d3"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="63" height="20" uuid="6a4ea09b-2dcd-4c7a-a9fa-ff9c20d15c6a"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="0" width="87" height="20" uuid="140f3e2d-8e18-4d09-9fb6-96b86b127312"/>
+				<textFieldExpression><![CDATA[$F{Contact_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="0" width="76" height="20" uuid="0e644e1e-1ecb-4b8d-9d8c-abc4042ab7b0"/>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="0" width="67" height="20" uuid="90e89349-1645-4352-85ef-fb79d5243f83"/>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="446" y="0" width="79" height="20" uuid="002a83c4-d25b-4c31-9406-c2221978b671"/>
+				<textFieldExpression><![CDATA[$F{Blood_Group}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="539" y="0" width="89" height="20" uuid="c5f52f55-36ff-4f6c-a5d7-ee51a05f0478"/>
+				<textFieldExpression><![CDATA[$F{Linked_Branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="641" y="0" width="80" height="20" uuid="414de63f-65ee-4e77-8390-e62122e6f6b6"/>
+				<textFieldExpression><![CDATA[$F{Department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="732" y="0" width="70" height="20" uuid="507078be-98d0-475b-93dc-83ea2cb13042"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="179" y="0" width="387" height="20" uuid="27069cff-ce64-4714-836a-4684bbba095e"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Blood Bank @ National Blood Transfusion Service]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="29" splitType="Stretch"/>
+	</summary>
+</jasperReport>

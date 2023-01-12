@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15bae42e-e6e4-4a6e-905c-e092b60fdc22">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Admin;]]>
+	</queryString>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contact_NO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Department" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Linked_Branch" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EmployeeID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="282" y="34" width="190" height="33" uuid="d1e99987-66a2-4ec9-aa61-a3a2c3340852"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admin Full Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="2" width="55" height="20" uuid="852b14df-736a-456e-9869-c1d2731e4c6c"/>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="2" width="62" height="20" uuid="148037f0-4010-43ae-b3fb-16c7c79041e3"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="2" width="83" height="20" uuid="d464aa11-37b1-43b1-8afd-acdfc4c7d6b1"/>
+				<text><![CDATA[Contact_NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="2" width="76" height="20" uuid="e70d6e99-105b-463f-87fe-06e5e8f13913"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="2" width="78" height="20" uuid="4ba13e23-fac3-4d74-83e2-c000f11a16ad"/>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="84" height="20" uuid="e309f609-1f3d-4e23-9df6-823a91fbb150"/>
+				<text><![CDATA[Linked_Branch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="573" y="2" width="100" height="20" uuid="c4dbf345-d5bb-4b58-aa3f-9da708698048"/>
+				<text><![CDATA[EmployeeID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="2" width="100" height="20" uuid="4623fdd4-e359-4616-8cf5-bb377c5f2c88"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="0" width="55" height="20" uuid="f9895a53-5728-4d84-99d7-7f885c250e27"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="0" width="62" height="20" uuid="b769a9c5-d501-44c1-add0-af59136d4e2c"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="0" width="83" height="20" uuid="1a07f6ba-c2ad-4efb-9399-c7ee263b27d1"/>
+				<textFieldExpression><![CDATA[$F{Contact_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="0" width="76" height="20" uuid="270115c1-e49d-41e7-98c5-130310fde254"/>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="0" width="78" height="20" uuid="26c26bf9-c4d3-4623-aaa1-75adf845773f"/>
+				<textFieldExpression><![CDATA[$F{Department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="4" width="100" height="20" uuid="c4b65923-3cb3-4a19-92a3-1ecc002a7544"/>
+				<textFieldExpression><![CDATA[$F{Linked_Branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="573" y="4" width="100" height="20" uuid="aa96f308-de35-4782-bdb8-eaaf82c62a04"/>
+				<textFieldExpression><![CDATA[$F{EmployeeID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="4" width="100" height="20" uuid="0dae9eac-cec0-4d7b-8c79-1282ad2161a5"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="0" width="390" height="20" uuid="fb967c96-47c5-41af-93f2-c4c3b7008f6e"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Blood Bank @ National Blood Transfusion Service]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
