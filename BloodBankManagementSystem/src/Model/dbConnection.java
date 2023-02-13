@@ -17,7 +17,7 @@ public class dbConnection
         try
         {
         String dbpath="jdbc:mysql://localhost:3306/NationalBloodBank";
-        con=DriverManager.getConnection(dbpath,"root","DdCya995142@4681");
+        con=DriverManager.getConnection(dbpath,"root","");
         }
         catch(Exception e)
         {
