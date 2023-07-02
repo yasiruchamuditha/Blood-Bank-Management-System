@@ -5,7 +5,11 @@
 package Controller;
 
 import Model.*;
-
+/**
+ *
+ * @author yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 public class C_Admin_Registration 
 {
     public static boolean AdminRegistration(String NIC,String Name,int Contact_No,String Address,String Department,String Linked_Branch,String EmployeeID,String Email,String Password)
