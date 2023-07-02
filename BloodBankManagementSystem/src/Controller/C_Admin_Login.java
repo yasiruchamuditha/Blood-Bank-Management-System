@@ -5,7 +5,11 @@
 package Controller;
 
 import Model.*;
-
+/**
+ *
+ * @author yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 public class C_Admin_Login
 {
     public static boolean  AdminLogin(String NIC,String Password)
