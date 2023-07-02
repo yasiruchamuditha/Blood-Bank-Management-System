@@ -7,7 +7,10 @@ package View;
 import javax.swing.JOptionPane;
 import Controller.*;
 import Model.Validation;
-
+/**
+ * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 
 public class V_Admin_SignUp_Page extends javax.swing.JFrame {
 

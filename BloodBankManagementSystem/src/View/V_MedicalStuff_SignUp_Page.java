@@ -9,8 +9,8 @@ import Controller.*;
 import Model.Validation;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_MedicalStuff_SignUp_Page extends javax.swing.JFrame {
 

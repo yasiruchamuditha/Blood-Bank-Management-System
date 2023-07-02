@@ -6,8 +6,7 @@ package Controller;
 
 import Model.*;
 /**
- *
- * @author yasiru
+ * @author Yasiru
  * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class C_Admin_Login

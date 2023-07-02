@@ -5,8 +5,8 @@
 package View;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_TermsAndConditions extends javax.swing.JFrame {
 

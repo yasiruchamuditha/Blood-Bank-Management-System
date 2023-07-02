@@ -6,8 +6,8 @@ package Model;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class Validation
 {

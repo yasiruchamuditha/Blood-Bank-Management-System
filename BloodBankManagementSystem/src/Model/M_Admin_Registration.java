@@ -6,7 +6,10 @@ package Model;
 
 import java.sql.*;
 import javax.swing.*;
-
+/**
+ * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 
 public class M_Admin_Registration
 {

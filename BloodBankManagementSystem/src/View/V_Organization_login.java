@@ -7,8 +7,8 @@ import Model.*;
 import Controller.*;
 import javax.swing.JOptionPane;
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_Organization_login extends javax.swing.JFrame {
 

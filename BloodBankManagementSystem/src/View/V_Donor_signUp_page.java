@@ -12,8 +12,8 @@ import javax.swing.JOptionPane;
 import Model.*;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_Donor_signUp_page extends javax.swing.JFrame {
 

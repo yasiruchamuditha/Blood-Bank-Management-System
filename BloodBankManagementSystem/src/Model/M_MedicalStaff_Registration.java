@@ -7,6 +7,10 @@ package Model;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+/**
+ * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 public class M_MedicalStaff_Registration
 {
     public static boolean MedicalStaffRegistration(String NIC,String Name,int Contact_No,String Address,String Gender,String Blood_Group,String Linked_Branch,String Department,String Email,String Password)

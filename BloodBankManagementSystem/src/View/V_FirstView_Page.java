@@ -7,8 +7,8 @@ package View;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_FirstView_Page extends javax.swing.JFrame {
 

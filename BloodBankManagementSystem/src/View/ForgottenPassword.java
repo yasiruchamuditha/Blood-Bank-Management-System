@@ -8,8 +8,8 @@ import Controller.*;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class ForgottenPassword extends javax.swing.JFrame {
 

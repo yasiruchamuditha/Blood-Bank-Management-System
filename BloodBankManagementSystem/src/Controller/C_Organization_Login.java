@@ -5,6 +5,10 @@
 package Controller;
 
 import Model.*;
+/**
+ * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 public class C_Organization_Login 
 {
       public static boolean OrganizationalLogin(String RegNo,String Password)

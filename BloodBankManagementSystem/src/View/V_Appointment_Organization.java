@@ -11,8 +11,8 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_Appointment_Organization extends javax.swing.JFrame {
 

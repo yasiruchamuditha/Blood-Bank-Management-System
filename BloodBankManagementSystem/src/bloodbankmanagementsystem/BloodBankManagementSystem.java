@@ -5,8 +5,8 @@
 package bloodbankmanagementsystem;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class BloodBankManagementSystem {
 

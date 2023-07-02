@@ -5,8 +5,8 @@
 package Controller;
 import Model.M_Transcation;
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class C_Transcation 
 {

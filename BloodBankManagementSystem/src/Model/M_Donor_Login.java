@@ -6,7 +6,10 @@ package Model;
 
 import javax.swing.JOptionPane;
 import java.sql.*;
-
+/**
+ * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
+ */
 public class M_Donor_Login 
 {
     public static boolean DonorLogin(String NIC,String Password)

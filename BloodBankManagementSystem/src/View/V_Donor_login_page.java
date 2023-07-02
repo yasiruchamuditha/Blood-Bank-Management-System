@@ -9,8 +9,8 @@ import Model.SelectedUser;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class V_Donor_login_page extends javax.swing.JFrame {
 

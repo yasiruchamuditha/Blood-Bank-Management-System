@@ -6,8 +6,8 @@ package View;
 import Controller.*;
 import javax.swing.JOptionPane;
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class Security_Questions extends javax.swing.JFrame {
 

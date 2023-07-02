@@ -8,8 +8,8 @@ import Controller.C_Security;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Yasiru
+ * contact me : https://linktr.ee/yasiruchamuditha for more information.
  */
 public class SecurityQuestion2 extends javax.swing.JFrame {
 
